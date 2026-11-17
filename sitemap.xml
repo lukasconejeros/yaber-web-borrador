@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://clinicayaber.cl/</loc><lastmod>2026-11-16</lastmod></url>
-  <url><loc>https://clinicayaber.cl/tratamientos/</loc><lastmod>2026-11-16</lastmod></url>
-  <url><loc>https://clinicayaber.cl/rehabilitacion-e-implantes/</loc><lastmod>2026-11-16</lastmod></url>
-  <url><loc>https://clinicayaber.cl/ortodoncia/</loc><lastmod>2026-11-16</lastmod></url>
-  <url><loc>https://clinicayaber.cl/odontologia-general/</loc><lastmod>2026-11-16</lastmod></url>
-  <url><loc>https://clinicayaber.cl/odontopediatria/</loc><lastmod>2026-11-16</lastmod></url>
-  <url><loc>https://clinicayaber.cl/estetica-facial/</loc><lastmod>2026-11-16</lastmod></url>
-  <url><loc>https://clinicayaber.cl/nosotros/</loc><lastmod>2026-11-16</lastmod></url>
-  <url><loc>https://clinicayaber.cl/contacto/</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://clinicayaber.cl/blog/</loc></url>
+  <url><loc>https://clinicayaber.cl/blog/page/2/</loc></url>
+  <url><loc>https://clinicayaber.cl/cepillo-ortodoncia-como-elegirlo/</loc></url>
+  <url><loc>https://clinicayaber.cl/cirugia-maxilofacial/</loc></url>
+  <url><loc>https://clinicayaber.cl/cirugia-maxilofacial-en-san-miguel-salud-y-estetica-orofacial/</loc></url>
+  <url><loc>https://clinicayaber.cl/endodoncia/</loc></url>
+  <url><loc>https://clinicayaber.cl/estetica-dental/</loc></url>
+  <url><loc>https://clinicayaber.cl/estetica-facial/</loc></url>
+  <url><loc>https://clinicayaber.cl/extraccion-de-muelas-del-juicio-en-clinica-yaber-san-miguel/</loc></url>
+  <url><loc>https://clinicayaber.cl/implantes-dentales-en-san-miguel-recupera-tu-sonrisa-y-funcionalidad-con-clinica-yaber/</loc></url>
+  <url><loc>https://clinicayaber.cl/</loc></url>
+  <url><loc>https://clinicayaber.cl/mesoterapia-facial-beneficios-y-resultados-en-estetica/</loc></url>
+  <url><loc>https://clinicayaber.cl/nosotros/</loc></url>
+  <url><loc>https://clinicayaber.cl/odontologia-general/</loc></url>
+  <url><loc>https://clinicayaber.cl/odontopediatria/</loc></url>
+  <url><loc>https://clinicayaber.cl/odontopediatria-en-san-miguel-como-superar-el-miedo-al-dentista/</loc></url>
+  <url><loc>https://clinicayaber.cl/ortodoncia/</loc></url>
+  <url><loc>https://clinicayaber.cl/ortodoncia-interceptiva-en-san-miguel/</loc></url>
+  <url><loc>https://clinicayaber.cl/periodoncia/</loc></url>
+  <url><loc>https://clinicayaber.cl/rehabilitacion-e-implantes/</loc></url>
+  <url><loc>https://clinicayaber.cl/toxina-botulinica-en-clinica-yaber-la-guia-experta-para-rejuvenecer-el-rostro/</loc></url>
+  <url><loc>https://clinicayaber.cl/trastornos-temporomandibulares/</loc></url>
+  <url><loc>https://clinicayaber.cl/tratamiento-de-trastornos-temporomandibulares-y-bruxismo-en-san-miguel/</loc></url>
+  <url><loc>https://clinicayaber.cl/tratamiento-para-periodontitis-en-san-miguel/</loc></url>
 </urlset>
