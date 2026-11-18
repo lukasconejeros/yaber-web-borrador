@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Waly Ads · Ejemplo de informe mensual · Clínica Yaber</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --fondo:#f0f7fb;--tarjeta:#ffffff;--tinta:#0c2e40;--suave:#4b6272;--linea:#d6e6ef;
+  --marca:#0b4f6c;--marca2:#0e7fa8;--cielo:#e3f2fa;
+  --verde:#14804a;--verde-f:#e5f6ec;--ambar:#9a6400;--ambar-f:#fff4d9;--rojo:#b42318;--rojo-f:#fdecea;
+  --radio:16px;--sombra:0 1px 2px rgba(12,46,64,.06),0 6px 20px rgba(12,46,64,.07);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;font-family:Inter,"Segoe UI",system-ui,sans-serif;font-size:16px;line-height:1.55;color:var(--tinta);background:var(--fondo)}
+.envoltura{max-width:1040px;margin:0 auto;padding:0 16px 48px}
+a{color:var(--marca2)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #000;outline-offset:2px;border-radius:6px}
+.aviso{background:var(--ambar-f);color:#6b4600;border-bottom:1px solid #f0d58a;font-size:14px;font-weight:600;text-align:center;padding:10px 16px}
+.portada{background:linear-gradient(135deg,#0b4f6c 0%,#0e6f93 60%,#1590bd 100%);color:#fff;padding:36px 0 84px}
+.marca{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.2px;opacity:.95}
+.logo{width:34px;height:34px;border-radius:10px;background:#fff;color:var(--marca);display:grid;place-items:center;font-weight:800}
+.portada h1{font-size:clamp(28px,6vw,44px);line-height:1.1;margin:22px 0 8px;font-weight:800;letter-spacing:-.5px}
+.portada p{margin:0;max-width:640px;color:#d8eef7;font-size:17px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chip{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);padding:6px 12px;border-radius:999px;font-size:14px}
+.kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:-56px}
+@media(min-width:760px){.kpis{grid-template-columns:repeat(4,1fr)}}
+.kpi{background:var(--tarjeta);border-radius:var(--radio);box-shadow:var(--sombra);padding:16px}
+.kpi b{display:block;font-size:clamp(24px,5vw,36px);line-height:1.05;font-weight:800;color:var(--marca)}
+.kpi span{display:block;font-size:14px;color:var(--suave);margin-top:6px}
+.kpi small{display:inline-block;margin-top:8px;font-size:13px;font-weight:600;padding:2px 8px;border-radius:999px}
+.sube{background:var(--verde-f);color:var(--verde)}.baja{background:var(--rojo-f);color:var(--rojo)}
+.indice{position:sticky;top:0;z-index:5;background:rgba(240,247,251,.94);backdrop-filter:blur(6px);margin:20px -16px 0;padding:10px 16px;border-bottom:1px solid var(--linea);overflow-x:auto;white-space:nowrap}
+.indice a{display:inline-block;text-decoration:none;color:var(--marca);font-weight:600;font-size:14px;padding:10px 12px;border-radius:999px;margin-right:4px}
+.indice a:hover{background:var(--cielo)}
+section{margin-top:36px;scroll-margin-top:70px}
+h2{font-size:clamp(22px,4vw,28px);margin:0 0 6px;font-weight:800;letter-spacing:-.3px}
+.bajada{color:var(--suave);margin:0 0 16px;max-width:720px}
+.tarjeta{background:var(--tarjeta);border-radius:var(--radio);box-shadow:var(--sombra);padding:18px}
+.grilla{display:grid;gap:12px}
+@media(min-width:760px){.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}}
+.salud{display:grid;gap:16px;align-items:center}
+@media(min-width:760px){.salud{grid-template-columns:220px 1fr}}
+.anillo{--p:72;width:180px;height:180px;margin:0 auto;border-radius:50%;background:conic-gradient(var(--marca2) calc(var(--p)*1%),#e3edf2 0);display:grid;place-items:center}
+.anillo div{width:136px;height:136px;border-radius:50%;background:#fff;display:grid;place-items:center;text-align:center}
+.anillo b{font-size:44px;font-weight:800;color:var(--marca);line-height:1}
+.anillo span{font-size:13px;color:var(--suave)}
+.antes{text-align:center;font-size:14px;color:var(--suave);margin-top:8px}
+.areas{display:grid;gap:10px}
+.area{display:grid;grid-template-columns:120px 1fr 32px;gap:10px;align-items:center;font-size:15px}
+.barra{height:10px;background:#e3edf2;border-radius:99px;overflow:hidden}.barra i{display:block;height:100%;border-radius:99px}
+.provisional{display:inline-block;background:var(--ambar-f);color:var(--ambar);font-weight:700;font-size:13px;padding:3px 10px;border-radius:999px}
+.embudo{display:grid;gap:8px}
+.paso{display:grid;grid-template-columns:96px 1fr;gap:12px;align-items:center}
+.paso .pbar{background:linear-gradient(90deg,var(--marca2),#38bdf8);color:#fff;font-weight:700;border-radius:10px;padding:8px 12px;min-width:max-content;white-space:nowrap}
+.tabla{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-size:15px;min-width:680px}
+th{font-size:13px;text-align:left;color:var(--suave);font-weight:600;padding:10px;border-bottom:2px solid var(--linea)}
+td{padding:12px 10px;border-bottom:1px solid var(--linea)}
+@media(max-width:759px){.tabla table,.tabla tbody,.tabla tr,.tabla td{display:block;min-width:0}.tabla thead{display:none}.tabla tr{padding:10px 0;border-bottom:2px solid var(--linea)}.tabla tr:last-child{border-bottom:0}.tabla td{display:flex;justify-content:space-between;gap:12px;border:0;padding:5px 0;text-align:right}.tabla td::before{content:attr(data-l);color:var(--suave);font-size:14px;text-align:left}.tabla td:first-child{font-weight:800;font-size:18px}.tabla td:first-child::before{content:""}}
+td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.est{font-weight:700;font-size:13px;padding:3px 10px;border-radius:999px;white-space:nowrap;display:inline-block}
+.e-v{background:var(--verde-f);color:var(--verde)}.e-a{background:var(--ambar-f);color:var(--ambar)}.e-r{background:var(--rojo-f);color:var(--rojo)}.e-c{background:var(--cielo);color:var(--marca)}
+.reco{border-left:6px solid var(--marca2)}
+.reco.verde{border-left-color:var(--verde)}.reco.ambar{border-left-color:#d99a00}.reco.roja{border-left-color:var(--rojo)}
+.reco h3{margin:8px 0 10px;font-size:19px;line-height:1.3}
+.etiquetas{display:flex;flex-wrap:wrap;gap:6px}
+.datos{display:grid;gap:10px;margin:0}
+@media(min-width:760px){.datos{grid-template-columns:1fr 1fr}}
+.datos div{background:#f6fafc;border-radius:12px;padding:10px 12px}
+.datos dt{font-size:12px;text-transform:uppercase;letter-spacing:.6px;color:var(--suave);font-weight:700}
+.datos dd{margin:4px 0 0;font-size:15px}
+.letra-chica{margin:12px 0 0;font-size:14px;color:var(--suave)}
+.anuncio{display:grid;gap:10px;align-content:start}
+.cabeza{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.cabeza h3{margin:8px 0 0;font-size:17px}
+.nota-anuncio{font-size:28px;font-weight:800;line-height:1}
+.etq{display:inline-block;background:var(--cielo);color:var(--marca);font-size:12px;font-weight:700;padding:3px 9px;border-radius:999px}
+ul{margin:6px 0 0;padding-left:20px}li{margin:4px 0}
+.calce{display:flex;gap:10px;align-items:center;font-size:14px;color:var(--suave)}
+.calce .barra{flex:1}
+.nuevo{border:2px dashed #9fd3ea;background:#fbfeff}
+.nuevo .linea1{font-size:18px;font-weight:700;margin:8px 0}
+.campo{font-size:14px;margin:4px 0}.campo b{color:var(--marca)}
+.copiar{margin-top:10px;min-height:44px;border:0;border-radius:12px;background:var(--marca);color:#fff;font-weight:700;font-size:15px;padding:10px 16px;cursor:pointer;font-family:inherit;transition:background .2s}
+.copiar:hover{background:#0a4058}
+.lista{padding:0;margin:0}
+.lista li{list-style:none;margin:0;padding:12px 0;border-bottom:1px solid var(--linea);display:grid;grid-template-columns:28px 1fr;gap:10px}
+.lista li:last-child{border-bottom:0}
+.num{width:28px;height:28px;border-radius:50%;background:var(--marca);color:#fff;display:grid;place-items:center;font-weight:700;font-size:14px}
+.quien{font-size:13px;color:var(--suave)}
+details{background:var(--tarjeta);border-radius:var(--radio);box-shadow:var(--sombra);padding:14px 18px;margin-top:12px}
+summary{cursor:pointer;font-weight:700;padding:6px 0}
+.pie{margin-top:40px;font-size:13px;color:var(--suave);border-top:1px solid var(--linea);padding-top:16px}
+@media print{
+  .indice,.copiar{display:none}
+  body{background:#fff}.portada{padding-bottom:30px}.kpis{margin-top:12px}
+  .tarjeta,details,.kpi{box-shadow:none;border:1px solid var(--linea);break-inside:avoid}
+}
+</style>
+</head>
+<body>
+
+<div class="aviso">EJEMPLO CON DATOS INVENTADOS · Así se ve el informe que llega cada mes con Waly Ads. Los números no son los de tu clínica.</div>
+
+<header class="portada">
+  <div class="envoltura">
+    <div class="marca"><div class="logo" aria-hidden="true">W</div> Waly Ads</div>
+    <h1>Tus anuncios de octubre, de punta a punta</h1>
+    <p>Desde que alguien ve tu anuncio en Facebook o Instagram hasta que se sienta en el sillón y paga. Con lo que conviene subir, cambiar o apagar, listo para pasárselo a tu agencia.</p>
+    <div class="chips">
+      <span class="chip">Clínica Yaber</span>
+      <span class="chip">1 al 31 de octubre</span>
+      <span class="chip">Preparado el 1 de noviembre</span>
+    </div>
+  </div>
+</header>
+
+<main class="envoltura">
+
+  <div class="kpis">
+    <div class="kpi"><b>$1.180.000</b><span>gastado en Facebook e Instagram</span><small class="baja">+6&nbsp;% que septiembre</small></div>
+    <div class="kpi"><b>41</b><span>pacientes nuevos que pagaron</span><small class="sube">+9 que septiembre</small></div>
+    <div class="kpi"><b>$28.780</b><span>costo de cada paciente que pagó</span><small class="sube">−18&nbsp;% que septiembre</small></div>
+    <div class="kpi"><b>$8,2</b><span>cobrados por cada $1 en anuncios</span><small class="sube">septiembre $6,9</small></div>
+  </div>
+
+  <nav class="indice" aria-label="Secciones del informe">
+    <a href="#salud">Salud</a><a href="#embudo">Embudo</a><a href="#campanas">Campañas</a><a href="#recomendaciones">Qué hacer</a><a href="#anuncios">Anuncio por anuncio</a><a href="#nuevos">Anuncios nuevos</a><a href="#agencia">Lista para la agencia</a><a href="#origen">De dónde sale</a>
+  </nav>
+
+  <section id="salud">
+    <h2>Cómo está tu cuenta</h2>
+    <p class="bajada">Revisamos 52 puntos de la cuenta, desde cómo se mide hasta cuánto se cansan los anuncios. 11 todavía no se pueden revisar porque falta un dato, así que el puntaje es <span class="provisional">provisional</span>.</p>
+    <div class="tarjeta salud">
+      <div><div class="anillo" style="--p:72" role="img" aria-label="Puntaje 72 de 100, el mes pasado 64"><div><b>72</b><span>de 100</span></div></div><p class="antes">El mes pasado, 64</p></div>
+      <div class="areas">
+        <div class="area"><span>Medición</span><div class="barra"><i style="width:58%;background:#d99a00"></i></div><b>58</b></div>
+        <div class="area"><span>Anuncios</span><div class="barra"><i style="width:66%;background:#d99a00"></i></div><b>66</b></div>
+        <div class="area"><span>Estructura</span><div class="barra"><i style="width:84%;background:var(--verde)"></i></div><b>84</b></div>
+        <div class="area"><span>Públicos</span><div class="barra"><i style="width:80%;background:var(--verde)"></i></div><b>80</b></div>
+        <div class="area"><span>Presupuesto</span><div class="barra"><i style="width:77%;background:var(--marca2)"></i></div><b>77</b></div>
+        <div class="area"><span>Reglas de Meta</span><div class="barra"><i style="width:90%;background:var(--verde)"></i></div><b>90</b></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="embudo">
+    <h2>Lo que Facebook ve y lo que pasó en la clínica</h2>
+    <p class="bajada">Facebook sabe hasta que la persona aprieta el botón. Lo que viene después lo vemos nosotros en las conversaciones de Sofi y en Dentalsoft.</p>
+    <div class="grilla g2">
+      <div class="tarjeta embudo" aria-label="Embudo del mes">
+        <div class="paso"><span>Escribieron</span><div class="pbar" style="width:100%">617</div></div>
+        <div class="paso"><span>Agendaron</span><div class="pbar" style="width:46%">152 · 25&nbsp;%</div></div>
+        <div class="paso"><span>Vinieron</span><div class="pbar" style="width:30%">86 · 57&nbsp;%</div></div>
+        <div class="paso"><span>Pagaron</span><div class="pbar" style="width:20%">41</div></div>
+        <p class="letra-chica">66 de los 152 que agendaron faltaron sin avisar. Quedaron en la lista de Llamadas de la secretaria.</p>
+      </div>
+      <div class="tarjeta">
+        <span class="est e-r">Lo más importante del mes</span>
+        <h3 style="margin:10px 0 6px;font-size:20px;line-height:1.3">En estética, Facebook contó 214 «agendar cita». En la clínica hubo 21 horas.</h3>
+        <p style="margin:0;color:var(--suave)">Ese número cuenta a quien aprieta «agendar» en el anuncio, no a quien toma una hora. Como la campaña aprende de ese número, sale a buscar más gente que aprieta el botón y no más pacientes. Es la recomendación número 1.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="campanas">
+    <h2>Campaña por campaña</h2>
+    <p class="bajada">Cada número se compara con el promedio de tu propia cuenta en los últimos 3 meses, no con promedios de otros países o de otros rubros.</p>
+    <div class="tarjeta tabla">
+      <table>
+        <thead><tr><th>Campaña</th><th>Gastado</th><th>Escribieron</th><th>Costo por persona que escribe</th><th>Pagaron</th><th>Costo por paciente</th><th>Tu promedio 3 meses</th><th>Cobrado por cada $1</th><th>Estado</th></tr></thead>
+        <tbody>
+          <tr><td data-l="Campaña">General</td><td data-l="Gastado" class="n">$640.000</td><td data-l="Escribieron" class="n">468</td><td data-l="Costo por persona que escribe" class="n">$1.368</td><td data-l="Pagaron" class="n">33</td><td data-l="Costo por paciente" class="n"><b>$19.394</b></td><td data-l="Tu promedio 3 meses" class="n">$21.500</td><td data-l="Cobrado por cada $1" class="n">$12,2</td><td data-l="Estado"><span class="est e-v">Bien</span></td></tr>
+          <tr><td data-l="Campaña">Estética</td><td data-l="Gastado" class="n">$420.000</td><td data-l="Escribieron" class="n">118</td><td data-l="Costo por persona que escribe" class="n">$3.559</td><td data-l="Pagaron" class="n">5</td><td data-l="Costo por paciente" class="n"><b>$84.000</b></td><td data-l="Tu promedio 3 meses" class="n">$71.000</td><td data-l="Cobrado por cada $1" class="n">$3,2</td><td data-l="Estado"><span class="est e-r">Cara</span></td></tr>
+          <tr><td data-l="Campaña">Ortodoncia</td><td data-l="Gastado" class="n">$120.000</td><td data-l="Escribieron" class="n">31</td><td data-l="Costo por persona que escribe" class="n">$3.871</td><td data-l="Pagaron" class="n">3</td><td data-l="Costo por paciente" class="n"><b>$40.000</b></td><td data-l="Tu promedio 3 meses" class="n">$52.000</td><td data-l="Cobrado por cada $1" class="n">$4,9</td><td data-l="Estado"><span class="est e-a">Pocos casos</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="recomendaciones">
+    <h2>Qué recomendamos hacer este mes</h2>
+    <p class="bajada">Cada recomendación dice qué vimos, qué hacer, cuánto tiempo mirarla y cuándo volver atrás, para que ningún cambio quede al ojo.</p>
+    <div class="grilla">
+
+      <article class="tarjeta reco roja">
+        <div class="etiquetas"><span class="est e-r">1 · Medición</span><span class="est e-v">Seguridad alta</span></div>
+        <h3>Que la campaña de estética aprenda de las horas reales y no del botón «agendar cita»</h3>
+        <dl class="datos">
+          <div><dt>Qué vimos</dt><dd>214 «agendar cita» en Facebook contra 21 horas tomadas en Dentalsoft y 9 que vinieron.</dd></div>
+          <div><dt>Qué hacer (agencia)</dt><dd>Cambiar el resultado que busca la campaña por el aviso de «hora tomada» que Waly le manda a Facebook desde la clínica.</dd></div>
+          <div><dt>Cuánto mirar</dt><dd>14 días, comparando el costo por hora tomada con los $20.000 de tu promedio.</dd></div>
+          <div><dt>Cuándo volver atrás</dt><dd>Si a los 14 días cada hora sale más de 30&nbsp;% más cara.</dd></div>
+        </dl>
+        <p class="letra-chica">A Facebook se le avisa solo que hubo una hora tomada, con el teléfono cifrado. Nunca qué tratamiento ni nada de la salud del paciente, que Meta no permite recibir. Antes de activarlo revisamos que tu cuenta no tenga restricciones de datos de salud.</p>
+      </article>
+
+      <article class="tarjeta reco verde">
+        <div class="etiquetas"><span class="est e-v">2 · Subir</span><span class="est e-v">Seguridad alta</span></div>
+        <h3>Subir de a poco «Limpieza + evaluación $19.990»</h3>
+        <dl class="datos">
+          <div><dt>Qué vimos</dt><dd>Cada paciente costó $14.200, el más barato de la cuenta. Cuando en septiembre se duplicó el gasto de una vez, el costo por paciente también se duplicó.</dd></div>
+          <div><dt>Qué hacer (agencia)</dt><dd>Pasar de $20.000 a $24.000 al día. Una sola vez, sin tocar el anuncio.</dd></div>
+          <div><dt>Cuánto mirar</dt><dd>14 días.</dd></div>
+          <div><dt>Cuándo volver atrás</dt><dd>Si cada paciente que agenda pasa de $9.000.</dd></div>
+        </dl>
+      </article>
+
+      <article class="tarjeta reco ambar">
+        <div class="etiquetas"><span class="est e-a">3 · Cambiar</span><span class="est e-v">Seguridad alta</span></div>
+        <h3>Reemplazar el video de toxina, que ya está cansado</h3>
+        <dl class="datos">
+          <div><dt>Qué vimos</dt><dd>La misma gente lo vio 4,8 veces y los que llegan a WhatsApp bajaron 38&nbsp;% comparado con sus 2 primeras semanas.</dd></div>
+          <div><dt>Qué hacer (agencia)</dt><dd>Apagarlo cuando esté arriba el anuncio nuevo A de esta página.</dd></div>
+          <div><dt>Cuánto mirar</dt><dd>21 días del anuncio nuevo.</dd></div>
+          <div><dt>Cuándo volver atrás</dt><dd>Si el nuevo trae menos conversaciones por cada $10.000 que el video en sus mejores semanas.</dd></div>
+        </dl>
+      </article>
+
+      <article class="tarjeta reco roja">
+        <div class="etiquetas"><span class="est e-r">4 · Pausar</span><span class="est e-a">Seguridad media</span></div>
+        <h3>Pausar «Armonización facial»</h3>
+        <dl class="datos">
+          <div><dt>Qué vimos</dt><dd>$160.000 gastados, 41 escribieron y ninguno agendó. En los chats preguntan por un paquete que la clínica no ofrece.</dd></div>
+          <div><dt>Qué hacer (agencia)</dt><dd>Pausarlo, no borrarlo, y pasar su plata a «Limpieza + evaluación».</dd></div>
+          <div><dt>Cuánto mirar</dt><dd>Revisar en 30 días si alguno de los 41 terminó agendando.</dd></div>
+          <div><dt>Cuándo volver atrás</dt><dd>Si aparecen pacientes que pagaron y llegaron por ese anuncio.</dd></div>
+        </dl>
+      </article>
+
+      <article class="tarjeta reco">
+        <div class="etiquetas"><span class="est e-c">5 · Medición</span><span class="est e-v">Seguridad alta</span></div>
+        <h3>Que cada anuncio tenga su propio texto de WhatsApp</h3>
+        <dl class="datos">
+          <div><dt>Qué vimos</dt><dd>3 anuncios mandan el mismo texto, así que no se sabe cuál de los 3 trajo a cada paciente.</dd></div>
+          <div><dt>Qué hacer (agencia)</dt><dd>Ponerle a cada uno el texto que aparece al final de cada anuncio nuevo. Sofi ya los reconoce.</dd></div>
+        </dl>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="anuncios">
+    <h2>Anuncio por anuncio</h2>
+    <p class="bajada">Cada anuncio con su nota, y cuánto calza lo que promete con lo que la persona encuentra después en WhatsApp.</p>
+    <div class="grilla g3">
+      <article class="tarjeta anuncio">
+        <div class="cabeza"><div><span class="etq">General · imagen</span><h3>«Limpieza + evaluación $19.990»</h3></div><span class="nota-anuncio" style="color:var(--verde)">86</span></div>
+        <ul><li>El precio y la promo se entienden en la primera línea.</li><li>Lleva 7 semanas y el costo sigue bajando. No tocar.</li></ul>
+        <div class="calce">Calce con WhatsApp<div class="barra"><i style="width:95%;background:var(--verde)"></i></div><b>95</b></div>
+      </article>
+      <article class="tarjeta anuncio">
+        <div class="cabeza"><div><span class="etq">Estética · video</span><h3>«Toxina, resultados naturales»</h3></div><span class="nota-anuncio" style="color:var(--ambar)">58</span></div>
+        <ul><li>Los primeros 3 segundos muestran el logo y no a una persona.</li><li>No dice el precio, y el 63&nbsp;% pregunta «¿cuánto vale?» en su primer mensaje.</li></ul>
+        <div class="calce">Calce con WhatsApp<div class="barra"><i style="width:64%;background:#d99a00"></i></div><b>64</b></div>
+      </article>
+      <article class="tarjeta anuncio">
+        <div class="cabeza"><div><span class="etq">Estética · imagen</span><h3>«Armonización facial»</h3></div><span class="nota-anuncio" style="color:var(--rojo)">31</span></div>
+        <ul><li>Foto de banco de imágenes, no de la clínica.</li><li>Promete un paquete completo y en WhatsApp se ofrece una evaluación.</li></ul>
+        <div class="calce">Calce con WhatsApp<div class="barra"><i style="width:38%;background:var(--rojo)"></i></div><b>38</b></div>
+      </article>
+    </div>
+    <div class="tarjeta" style="margin-top:12px">
+      <b>Variedad de anuncios.</b> De tus 9 anuncios activos, 6 dicen casi lo mismo (el precio de la limpieza). Meta explica que su sistema elige, para cada persona, entre todos los anuncios de la cuenta. Si casi todos dicen lo mismo, tiene poco para elegir. Lo probamos con los anuncios nuevos de abajo.
+    </div>
+  </section>
+
+  <section id="nuevos">
+    <h2>3 anuncios nuevos, listos para subir</h2>
+    <p class="bajada">Escritos con lo que preguntan tus pacientes en los chats y dentro de las reglas de Meta para salud. Sin fotos de antes y después en toxina, y sin preguntas como «¿tienes dolor?», porque Meta no deja que un anuncio dé a entender que sabe algo de la salud de quien lo ve.</p>
+    <div class="grilla g3">
+      <article class="tarjeta nuevo" id="nuevo-a">
+        <span class="etq">A · Precio claro</span>
+        <p class="linea1">«Toxina en 3 zonas desde $149.990, con evaluación incluida.»</p>
+        <p class="campo"><b>Texto.</b> Con dentista especializada en estética facial, en San Miguel. Te respondemos al tiro por WhatsApp y te damos la hora que te acomode.</p>
+        <p class="campo"><b>Título.</b> Toxina 3 zonas $149.990</p>
+        <p class="campo"><b>Formato.</b> Video de 15 segundos con la doctora explicando en los primeros 2 segundos. Solo para mayores de 18.</p>
+        <p class="campo"><b>Texto de WhatsApp.</b> Hola, quiero info de toxina (A1)</p>
+        <button class="copiar" type="button" data-copiar="nuevo-a">Copiar para la agencia</button>
+      </article>
+      <article class="tarjeta nuevo" id="nuevo-b">
+        <span class="etq">B · Lo que dicen los pacientes</span>
+        <p class="linea1">«105 pacientes nos dejaron 5 estrellas en Google.»</p>
+        <p class="campo"><b>Texto.</b> En Gran Avenida, con 18 profesionales y horario hasta las 19:45. Agenda tu evaluación por WhatsApp en un minuto.</p>
+        <p class="campo"><b>Título.</b> Nota 5,0 en Google</p>
+        <p class="campo"><b>Formato.</b> Carrusel con 5 reseñas reales.</p>
+        <p class="campo"><b>Texto de WhatsApp.</b> Hola, quiero agendar una evaluación (B1)</p>
+        <button class="copiar" type="button" data-copiar="nuevo-b">Copiar para la agencia</button>
+      </article>
+      <article class="tarjeta nuevo" id="nuevo-c">
+        <span class="etq">C · Lo que nadie está usando</span>
+        <p class="linea1">«Urgencias dentales, te atendemos hoy mismo.»</p>
+        <p class="campo"><b>Texto.</b> Hasta las 19:45 de lunes a jueves y los sábados. Escríbenos y te decimos la primera hora libre.</p>
+        <p class="campo"><b>Título.</b> Urgencia dental hoy</p>
+        <p class="campo"><b>Formato.</b> Imagen simple con la hora libre. Probar con $8.000 al día por 2 semanas.</p>
+        <p class="campo"><b>Texto de WhatsApp.</b> Hola, necesito una hora de urgencia (C1)</p>
+        <button class="copiar" type="button" data-copiar="nuevo-c">Copiar para la agencia</button>
+      </article>
+    </div>
+
+    <details>
+      <summary>Lo que están haciendo otras clínicas de la zona</summary>
+      <ul>
+        <li><b>Clínica A</b> tiene 14 anuncios activos, casi todos con precio en la imagen y testimonios en video. Su anuncio de implantes lleva 5 meses, señal de que les funciona.</li>
+        <li><b>Clínica B</b> ofrece «evaluación + radiografía sin costo» en todos sus anuncios. Es la oferta que más se repite este mes.</li>
+        <li><b>Nadie</b> está anunciando urgencias en la tarde ni el fin de semana. Por eso el anuncio C.</li>
+      </ul>
+      <p class="letra-chica">Sacado de la Biblioteca de anuncios de Meta, que es pública.</p>
+    </details>
+  </section>
+
+  <section id="agencia">
+    <h2>Lista para la agencia</h2>
+    <p class="bajada">En orden, de lo que más mueve a lo que menos.</p>
+    <div class="tarjeta">
+      <ol class="lista">
+        <li><span class="num">1</span><div><b>Estética, que aprenda de las horas reales</b><div class="quien">Agencia · esta semana · impacto alto</div></div></li>
+        <li><span class="num">2</span><div><b>Subir «Limpieza + evaluación» a $24.000 al día</b><div class="quien">Agencia · esta semana · impacto alto</div></div></li>
+        <li><span class="num">3</span><div><b>Subir el anuncio A y apagar el video de toxina</b><div class="quien">Agencia · próximos 7 días · impacto alto</div></div></li>
+        <li><span class="num">4</span><div><b>Pausar «Armonización facial»</b><div class="quien">Agencia · hoy · impacto medio</div></div></li>
+        <li><span class="num">5</span><div><b>Texto de WhatsApp propio en cada anuncio</b><div class="quien">Agencia y Waly · esta semana · impacto medio</div></div></li>
+        <li><span class="num">6</span><div><b>Probar el anuncio C de urgencias</b><div class="quien">Agencia · 2 semanas · impacto por medir</div></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="origen">
+    <h2>De dónde sale cada número</h2>
+    <details open>
+      <summary>Fuentes y lo que todavía no sabemos</summary>
+      <ul>
+        <li><b>Gastado</b>, cuántas veces vieron cada anuncio y los clics salen de tu cuenta de anuncios de Facebook, con acceso de solo lectura.</li>
+        <li><b>Escribieron</b> sale de las conversaciones de Sofi, según el texto con que llegó cada persona.</li>
+        <li><b>Agendaron, vinieron y pagaron</b> sale de Dentalsoft, cruzado por el celular.</li>
+        <li><b>Cobrado por cada $1</b> es la plata cobrada en la clínica en los 90 días después de escribir. No es ganancia.</li>
+        <li><b>Todavía no sabemos</b> cuánto más van a pagar los que escribieron en septiembre y octubre, así que esos meses van a mejorar. Tampoco vemos a quien llamó por teléfono en vez de escribir.</li>
+      </ul>
+    </details>
+  </section>
+
+  <p class="pie">Waly Ads · Conejeros Solutions · Ejemplo con datos inventados, preparado para Clínica Yaber.</p>
+</main>
+
+<script>
+document.querySelectorAll('.copiar').forEach(function(b){
+  b.addEventListener('click',function(){
+    var t=document.getElementById(b.dataset.copiar).innerText.replace('Copiar para la agencia','').trim();
+    navigator.clipboard.writeText(t).then(function(){b.textContent='Copiado';setTimeout(function(){b.textContent='Copiar para la agencia'},1800)});
+  });
+});
+</script>
+</body>
+</html>
