@@ -54,7 +54,7 @@ h2{font-size:clamp(22px,4vw,28px);margin:0 0 6px;font-weight:800;letter-spacing:
 .anillo span{font-size:13px;color:var(--suave)}
 .antes{text-align:center;font-size:14px;color:var(--suave);margin-top:8px}
 .areas{display:grid;gap:10px}
-.area{display:grid;grid-template-columns:120px 1fr 32px;gap:10px;align-items:center;font-size:15px}
+.area{display:grid;grid-template-columns:140px 1fr 32px;gap:10px;align-items:center;font-size:15px}
 .barra{height:10px;background:#e3edf2;border-radius:99px;overflow:hidden}.barra i{display:block;height:100%;border-radius:99px}
 .provisional{display:inline-block;background:var(--ambar-f);color:var(--ambar);font-weight:700;font-size:13px;padding:3px 10px;border-radius:999px}
 .embudo{display:grid;gap:8px}
@@ -128,13 +128,23 @@ summary{cursor:pointer;font-weight:700;padding:6px 0}
   <div class="kpis">
     <div class="kpi"><b>$1.180.000</b><span>gastado en Facebook e Instagram</span><small class="baja">+6&nbsp;% que septiembre</small></div>
     <div class="kpi"><b>41</b><span>pacientes nuevos que pagaron</span><small class="sube">+9 que septiembre</small></div>
-    <div class="kpi"><b>$28.780</b><span>costo de cada paciente que pagó</span><small class="sube">−18&nbsp;% que septiembre</small></div>
-    <div class="kpi"><b>$8,2</b><span>cobrados por cada $1 en anuncios</span><small class="sube">septiembre $6,9</small></div>
+    <div class="kpi"><b>$28.780</b><span>costo de cada paciente que pagó</span><small class="sube">−17&nbsp;% que septiembre</small></div>
+    <div class="kpi"><b>$8,3</b><span>cobrados en la clínica por cada $1 que pusiste en anuncios</span><small class="sube">septiembre $6,9</small></div>
   </div>
 
   <nav class="indice" aria-label="Secciones del informe">
-    <a href="#salud">Salud</a><a href="#embudo">Embudo</a><a href="#campanas">Campañas</a><a href="#recomendaciones">Qué hacer</a><a href="#anuncios">Anuncio por anuncio</a><a href="#nuevos">Anuncios nuevos</a><a href="#agencia">Lista para la agencia</a><a href="#origen">De dónde sale</a>
+    <a href="#mes-pasado">Mes pasado</a><a href="#salud">Salud</a><a href="#embudo">Del anuncio a la clínica</a><a href="#campanas">Campañas</a><a href="#recomendaciones">Qué hacer</a><a href="#anuncios">Anuncio por anuncio</a><a href="#nuevos">Anuncios nuevos</a><a href="#agencia">Lista para la agencia</a><a href="#origen">De dónde sale</a>
   </nav>
+
+  <section id="mes-pasado">
+    <h2>Lo que pasó con lo del mes pasado</h2>
+    <div class="grilla g3">
+      <div class="tarjeta"><span class="est e-v">Hecho</span><p style="margin:8px 0 0">Se apagó el anuncio de blanqueamiento. Esa plata pasó a ortodoncia y el costo por paciente de ortodoncia bajó de $52.000 a $40.000.</p></div>
+      <div class="tarjeta"><span class="est e-v">Hecho</span><p style="margin:8px 0 0">Los anuncios de la campaña general ya tienen su propio texto de WhatsApp. Por eso este mes se pudo ver cuál trajo a cada paciente.</p></div>
+      <div class="tarjeta"><span class="est e-a">Pendiente</span><p style="margin:8px 0 0">El video nuevo de estética no se subió. Sigue en la lista de este mes.</p></div>
+    </div>
+    <div class="tarjeta" style="margin-top:12px;background:var(--verde-f)"><b style="font-size:20px;color:var(--verde)">Este mes encontramos $160.000 en un anuncio que no trajo a nadie.</b><br>Solo con esa plata se paga buena parte de Waly Ads.</div>
+  </section>
 
   <section id="salud">
     <h2>Cómo está tu cuenta</h2>
@@ -144,8 +154,8 @@ summary{cursor:pointer;font-weight:700;padding:6px 0}
       <div class="areas">
         <div class="area"><span>Medición</span><div class="barra"><i style="width:58%;background:#d99a00"></i></div><b>58</b></div>
         <div class="area"><span>Anuncios</span><div class="barra"><i style="width:66%;background:#d99a00"></i></div><b>66</b></div>
-        <div class="area"><span>Estructura</span><div class="barra"><i style="width:84%;background:var(--verde)"></i></div><b>84</b></div>
-        <div class="area"><span>Públicos</span><div class="barra"><i style="width:80%;background:var(--verde)"></i></div><b>80</b></div>
+        <div class="area"><span>Orden de campañas</span><div class="barra"><i style="width:84%;background:var(--verde)"></i></div><b>84</b></div>
+        <div class="area"><span>A quién se muestra</span><div class="barra"><i style="width:80%;background:var(--verde)"></i></div><b>80</b></div>
         <div class="area"><span>Presupuesto</span><div class="barra"><i style="width:77%;background:var(--marca2)"></i></div><b>77</b></div>
         <div class="area"><span>Reglas de Meta</span><div class="barra"><i style="width:90%;background:var(--verde)"></i></div><b>90</b></div>
       </div>
@@ -161,12 +171,12 @@ summary{cursor:pointer;font-weight:700;padding:6px 0}
         <div class="paso"><span>Agendaron</span><div class="pbar" style="width:46%">152 · 25&nbsp;%</div></div>
         <div class="paso"><span>Vinieron</span><div class="pbar" style="width:30%">86 · 57&nbsp;%</div></div>
         <div class="paso"><span>Pagaron</span><div class="pbar" style="width:20%">41</div></div>
-        <p class="letra-chica">66 de los 152 que agendaron faltaron sin avisar. Quedaron en la lista de Llamadas de la secretaria.</p>
+        <p class="letra-chica">De los 66 que agendaron y no vinieron, 41 faltaron sin avisar y 25 cancelaron o tienen hora en noviembre. Los 41 quedaron en la lista de Llamadas de la secretaria.</p>
       </div>
       <div class="tarjeta">
         <span class="est e-r">Lo más importante del mes</span>
         <h3 style="margin:10px 0 6px;font-size:20px;line-height:1.3">En estética, Facebook contó 214 «agendar cita». En la clínica hubo 21 horas.</h3>
-        <p style="margin:0;color:var(--suave)">Ese número cuenta a quien aprieta «agendar» en el anuncio, no a quien toma una hora. Como la campaña aprende de ese número, sale a buscar más gente que aprieta el botón y no más pacientes. Es la recomendación número 1.</p>
+        <p style="margin:0;color:var(--suave)">Ese número cuenta a quien aprieta «agendar» en el anuncio, no a quien toma una hora. Si la agencia mira ese número, cree que estética anda 10 veces mejor de lo que anda. Es la recomendación número 1.</p>
       </div>
     </div>
   </section>
@@ -192,56 +202,56 @@ summary{cursor:pointer;font-weight:700;padding:6px 0}
     <div class="grilla">
 
       <article class="tarjeta reco roja">
-        <div class="etiquetas"><span class="est e-r">1 · Medición</span><span class="est e-v">Seguridad alta</span></div>
-        <h3>Que la campaña de estética aprenda de las horas reales y no del botón «agendar cita»</h3>
+        <div class="etiquetas"><span class="est e-r">1 · Medición</span><span class="est e-a">Qué tan seguros: medio</span></div>
+        <h3>Juzgar la campaña de estética por las horas reales y no por el botón «agendar cita»</h3>
         <dl class="datos">
           <div><dt>Qué vimos</dt><dd>214 «agendar cita» en Facebook contra 21 horas tomadas en Dentalsoft y 9 que vinieron.</dd></div>
-          <div><dt>Qué hacer (agencia)</dt><dd>Cambiar el resultado que busca la campaña por el aviso de «hora tomada» que Waly le manda a Facebook desde la clínica.</dd></div>
-          <div><dt>Cuánto mirar</dt><dd>14 días, comparando el costo por hora tomada con los $20.000 de tu promedio.</dd></div>
-          <div><dt>Cuándo volver atrás</dt><dd>Si a los 14 días cada hora sale más de 30&nbsp;% más cara.</dd></div>
+          <div><dt>Qué hacer (agencia)</dt><dd>Dejar de usar «agendar cita» para decidir y usar las horas tomadas que salen en este informe. Además, avisarle a Facebook qué personas tomaron hora, si tu cuenta lo permite.</dd></div>
+          <div><dt>Cuánto mirar</dt><dd>30 días, comparando el costo por hora tomada con los $20.000 de tu promedio.</dd></div>
+          <div><dt>Cuándo volver atrás</dt><dd>Si a los 30 días cada hora sale más de 30&nbsp;% más cara. Con 21 horas al mes, antes de eso no se puede concluir.</dd></div>
         </dl>
-        <p class="letra-chica">A Facebook se le avisa solo que hubo una hora tomada, con el teléfono cifrado. Nunca qué tratamiento ni nada de la salud del paciente, que Meta no permite recibir. Antes de activarlo revisamos que tu cuenta no tenga restricciones de datos de salud.</p>
+        <p class="letra-chica">A Facebook se le avisa solo que hubo una hora tomada, con el teléfono en clave, y solo de pacientes que aceptaron, como pide la nueva ley de datos personales. Nunca qué tratamiento ni nada de su salud. Meta tiene reglas especiales para clínicas, así que antes revisamos qué permite tu cuenta.</p>
       </article>
 
       <article class="tarjeta reco verde">
-        <div class="etiquetas"><span class="est e-v">2 · Subir</span><span class="est e-v">Seguridad alta</span></div>
+        <div class="etiquetas"><span class="est e-v">2 · Subir</span><span class="est e-v">Qué tan seguros: alto</span></div>
         <h3>Subir de a poco «Limpieza + evaluación $19.990»</h3>
         <dl class="datos">
-          <div><dt>Qué vimos</dt><dd>Cada paciente costó $14.200, el más barato de la cuenta. Cuando en septiembre se duplicó el gasto de una vez, el costo por paciente también se duplicó.</dd></div>
-          <div><dt>Qué hacer (agencia)</dt><dd>Pasar de $20.000 a $24.000 al día. Una sola vez, sin tocar el anuncio.</dd></div>
+          <div><dt>Qué vimos</dt><dd>Con $12.000 al día trajo 26 pacientes que pagaron, a $14.300 cada uno, el más barato de la cuenta. Cuando en septiembre se duplicó el gasto de una vez, el costo por paciente también se duplicó.</dd></div>
+          <div><dt>Qué hacer (agencia)</dt><dd>Pasar de $12.000 a $14.500 al día. Una sola vez, sin tocar el anuncio.</dd></div>
           <div><dt>Cuánto mirar</dt><dd>14 días.</dd></div>
-          <div><dt>Cuándo volver atrás</dt><dd>Si cada paciente que agenda pasa de $9.000.</dd></div>
+          <div><dt>Cuándo volver atrás</dt><dd>Si cada paciente que paga pasa de $17.000.</dd></div>
         </dl>
       </article>
 
       <article class="tarjeta reco ambar">
-        <div class="etiquetas"><span class="est e-a">3 · Cambiar</span><span class="est e-v">Seguridad alta</span></div>
+        <div class="etiquetas"><span class="est e-a">3 · Cambiar</span><span class="est e-v">Qué tan seguros: alto</span></div>
         <h3>Reemplazar el video de toxina, que ya está cansado</h3>
         <dl class="datos">
           <div><dt>Qué vimos</dt><dd>La misma gente lo vio 4,8 veces y los que llegan a WhatsApp bajaron 38&nbsp;% comparado con sus 2 primeras semanas.</dd></div>
           <div><dt>Qué hacer (agencia)</dt><dd>Apagarlo cuando esté arriba el anuncio nuevo A de esta página.</dd></div>
           <div><dt>Cuánto mirar</dt><dd>21 días del anuncio nuevo.</dd></div>
-          <div><dt>Cuándo volver atrás</dt><dd>Si el nuevo trae menos conversaciones por cada $10.000 que el video en sus mejores semanas.</dd></div>
+          <div><dt>Cuándo volver atrás</dt><dd>Si el nuevo trae menos horas tomadas por cada $10.000 que el video en sus mejores semanas. Puede traer menos chats pero mejores, por eso se mide por horas.</dd></div>
         </dl>
       </article>
 
       <article class="tarjeta reco roja">
-        <div class="etiquetas"><span class="est e-r">4 · Pausar</span><span class="est e-a">Seguridad media</span></div>
+        <div class="etiquetas"><span class="est e-r">4 · Pausar</span><span class="est e-a">Qué tan seguros: medio</span></div>
         <h3>Pausar «Armonización facial»</h3>
         <dl class="datos">
           <div><dt>Qué vimos</dt><dd>$160.000 gastados, 41 escribieron y ninguno agendó. En los chats preguntan por un paquete que la clínica no ofrece.</dd></div>
-          <div><dt>Qué hacer (agencia)</dt><dd>Pausarlo, no borrarlo, y pasar su plata a «Limpieza + evaluación».</dd></div>
+          <div><dt>Qué hacer (agencia)</dt><dd>Pausarlo, no borrarlo. Esos $160.000 quedan guardados hasta ver cómo anda la subida de la recomendación 2.</dd></div>
           <div><dt>Cuánto mirar</dt><dd>Revisar en 30 días si alguno de los 41 terminó agendando.</dd></div>
           <div><dt>Cuándo volver atrás</dt><dd>Si aparecen pacientes que pagaron y llegaron por ese anuncio.</dd></div>
         </dl>
       </article>
 
       <article class="tarjeta reco">
-        <div class="etiquetas"><span class="est e-c">5 · Medición</span><span class="est e-v">Seguridad alta</span></div>
+        <div class="etiquetas"><span class="est e-c">5 · Medición</span><span class="est e-v">Qué tan seguros: alto</span></div>
         <h3>Que cada anuncio tenga su propio texto de WhatsApp</h3>
         <dl class="datos">
-          <div><dt>Qué vimos</dt><dd>3 anuncios mandan el mismo texto, así que no se sabe cuál de los 3 trajo a cada paciente.</dd></div>
-          <div><dt>Qué hacer (agencia)</dt><dd>Ponerle a cada uno el texto que aparece al final de cada anuncio nuevo. Sofi ya los reconoce.</dd></div>
+          <div><dt>Qué vimos</dt><dd>Los 3 anuncios de estética mandan el mismo texto, así que no se sabe cuál de los 3 trajo a cada paciente.</dd></div>
+          <div><dt>Qué hacer (agencia)</dt><dd>Ponerle a cada uno un texto con su código, como los de los anuncios nuevos de abajo. El código (A1, B1…) le dice a Sofi de qué anuncio viene cada persona.</dd></div>
         </dl>
       </article>
 
@@ -250,22 +260,22 @@ summary{cursor:pointer;font-weight:700;padding:6px 0}
 
   <section id="anuncios">
     <h2>Anuncio por anuncio</h2>
-    <p class="bajada">Cada anuncio con su nota, y cuánto calza lo que promete con lo que la persona encuentra después en WhatsApp.</p>
+    <p class="bajada">Cada anuncio con su nota de 0 a 100, y si lo que promete calza con lo que Sofi le responde después por WhatsApp.</p>
     <div class="grilla g3">
       <article class="tarjeta anuncio">
         <div class="cabeza"><div><span class="etq">General · imagen</span><h3>«Limpieza + evaluación $19.990»</h3></div><span class="nota-anuncio" style="color:var(--verde)">86</span></div>
         <ul><li>El precio y la promo se entienden en la primera línea.</li><li>Lleva 7 semanas y el costo sigue bajando. No tocar.</li></ul>
-        <div class="calce">Calce con WhatsApp<div class="barra"><i style="width:95%;background:var(--verde)"></i></div><b>95</b></div>
+        <div class="calce">¿Calza con Sofi?<div class="barra"><i style="width:95%;background:var(--verde)"></i></div><b>95</b></div>
       </article>
       <article class="tarjeta anuncio">
         <div class="cabeza"><div><span class="etq">Estética · video</span><h3>«Toxina, resultados naturales»</h3></div><span class="nota-anuncio" style="color:var(--ambar)">58</span></div>
         <ul><li>Los primeros 3 segundos muestran el logo y no a una persona.</li><li>No dice el precio, y el 63&nbsp;% pregunta «¿cuánto vale?» en su primer mensaje.</li></ul>
-        <div class="calce">Calce con WhatsApp<div class="barra"><i style="width:64%;background:#d99a00"></i></div><b>64</b></div>
+        <div class="calce">¿Calza con Sofi?<div class="barra"><i style="width:64%;background:#d99a00"></i></div><b>64</b></div>
       </article>
       <article class="tarjeta anuncio">
         <div class="cabeza"><div><span class="etq">Estética · imagen</span><h3>«Armonización facial»</h3></div><span class="nota-anuncio" style="color:var(--rojo)">31</span></div>
         <ul><li>Foto de banco de imágenes, no de la clínica.</li><li>Promete un paquete completo y en WhatsApp se ofrece una evaluación.</li></ul>
-        <div class="calce">Calce con WhatsApp<div class="barra"><i style="width:38%;background:var(--rojo)"></i></div><b>38</b></div>
+        <div class="calce">¿Calza con Sofi?<div class="barra"><i style="width:38%;background:var(--rojo)"></i></div><b>38</b></div>
       </article>
     </div>
     <div class="tarjeta" style="margin-top:12px">
@@ -275,32 +285,32 @@ summary{cursor:pointer;font-weight:700;padding:6px 0}
 
   <section id="nuevos">
     <h2>3 anuncios nuevos, listos para subir</h2>
-    <p class="bajada">Escritos con lo que preguntan tus pacientes en los chats y dentro de las reglas de Meta para salud. Sin fotos de antes y después en toxina, y sin preguntas como «¿tienes dolor?», porque Meta no deja que un anuncio dé a entender que sabe algo de la salud de quien lo ve.</p>
+    <p class="bajada">Escritos con lo que preguntan tus pacientes en los chats y dentro de las reglas de Meta para salud. Sin nombrar medicamentos con receta, sin fotos de antes y después, y sin preguntas como «¿tienes dolor?», porque Meta no deja que un anuncio dé a entender que sabe algo de la salud de quien lo ve.</p>
     <div class="grilla g3">
       <article class="tarjeta nuevo" id="nuevo-a">
-        <span class="etq">A · Precio claro</span>
-        <p class="linea1">«Toxina en 3 zonas desde $149.990, con evaluación incluida.»</p>
-        <p class="campo"><b>Texto.</b> Con dentista especializada en estética facial, en San Miguel. Te respondemos al tiro por WhatsApp y te damos la hora que te acomode.</p>
-        <p class="campo"><b>Título.</b> Toxina 3 zonas $149.990</p>
-        <p class="campo"><b>Formato.</b> Video de 15 segundos con la doctora explicando en los primeros 2 segundos. Solo para mayores de 18.</p>
-        <p class="campo"><b>Texto de WhatsApp.</b> Hola, quiero info de toxina (A1)</p>
+        <span class="etq">A · Evaluación sin costo</span>
+        <p class="linea1">«Evaluación de estética facial sin costo, con la doctora que te va a atender.»</p>
+        <p class="campo"><b>Texto.</b> En Gran Avenida, San Miguel. Te explicamos qué te conviene y cuánto cuesta antes de hacer nada. Te respondemos al tiro por WhatsApp.</p>
+        <p class="campo"><b>Título.</b> Evaluación facial sin costo</p>
+        <p class="campo"><b>Formato.</b> Video de 15 segundos con la doctora hablando desde el primer segundo. Solo para mayores de 18.</p>
+        <p class="campo"><b>Texto de WhatsApp.</b> Hola, quiero la evaluación facial (A1)</p>
         <button class="copiar" type="button" data-copiar="nuevo-a">Copiar para la agencia</button>
       </article>
       <article class="tarjeta nuevo" id="nuevo-b">
         <span class="etq">B · Lo que dicen los pacientes</span>
-        <p class="linea1">«105 pacientes nos dejaron 5 estrellas en Google.»</p>
+        <p class="linea1">«Más de 100 pacientes nos recomiendan en Google.»</p>
         <p class="campo"><b>Texto.</b> En Gran Avenida, con 18 profesionales y horario hasta las 19:45. Agenda tu evaluación por WhatsApp en un minuto.</p>
-        <p class="campo"><b>Título.</b> Nota 5,0 en Google</p>
-        <p class="campo"><b>Formato.</b> Carrusel con 5 reseñas reales.</p>
+        <p class="campo"><b>Título.</b> Lo que dicen nuestros pacientes</p>
+        <p class="campo"><b>Formato.</b> Carrusel con 5 reseñas reales, cada una con el permiso escrito del paciente.</p>
         <p class="campo"><b>Texto de WhatsApp.</b> Hola, quiero agendar una evaluación (B1)</p>
         <button class="copiar" type="button" data-copiar="nuevo-b">Copiar para la agencia</button>
       </article>
       <article class="tarjeta nuevo" id="nuevo-c">
         <span class="etq">C · Lo que nadie está usando</span>
-        <p class="linea1">«Urgencias dentales, te atendemos hoy mismo.»</p>
-        <p class="campo"><b>Texto.</b> Hasta las 19:45 de lunes a jueves y los sábados. Escríbenos y te decimos la primera hora libre.</p>
-        <p class="campo"><b>Título.</b> Urgencia dental hoy</p>
-        <p class="campo"><b>Formato.</b> Imagen simple con la hora libre. Probar con $8.000 al día por 2 semanas.</p>
+        <p class="linea1">«Urgencias dentales, te damos la primera hora libre.»</p>
+        <p class="campo"><b>Texto.</b> De lunes a jueves hasta las 19:45 y los sábados hasta las 18:30. Escríbenos y te decimos al tiro cuándo te podemos ver.</p>
+        <p class="campo"><b>Título.</b> Urgencia dental en San Miguel</p>
+        <p class="campo"><b>Formato.</b> Imagen simple con el horario. Probar con $8.000 al día por 2 semanas.</p>
         <p class="campo"><b>Texto de WhatsApp.</b> Hola, necesito una hora de urgencia (C1)</p>
         <button class="copiar" type="button" data-copiar="nuevo-c">Copiar para la agencia</button>
       </article>
@@ -322,9 +332,9 @@ summary{cursor:pointer;font-weight:700;padding:6px 0}
     <p class="bajada">En orden, de lo que más mueve a lo que menos.</p>
     <div class="tarjeta">
       <ol class="lista">
-        <li><span class="num">1</span><div><b>Estética, que aprenda de las horas reales</b><div class="quien">Agencia · esta semana · impacto alto</div></div></li>
-        <li><span class="num">2</span><div><b>Subir «Limpieza + evaluación» a $24.000 al día</b><div class="quien">Agencia · esta semana · impacto alto</div></div></li>
-        <li><span class="num">3</span><div><b>Subir el anuncio A y apagar el video de toxina</b><div class="quien">Agencia · próximos 7 días · impacto alto</div></div></li>
+        <li><span class="num">1</span><div><b>Estética, decidir por las horas reales</b><div class="quien">Agencia · esta semana · impacto alto</div></div></li>
+        <li><span class="num">2</span><div><b>Subir «Limpieza + evaluación» a $14.500 al día</b><div class="quien">Agencia · esta semana · impacto alto</div></div></li>
+        <li><span class="num">3</span><div><b>Subir el anuncio A y después apagar el video de toxina</b><div class="quien">Agencia · próximos 7 días · impacto alto</div></div></li>
         <li><span class="num">4</span><div><b>Pausar «Armonización facial»</b><div class="quien">Agencia · hoy · impacto medio</div></div></li>
         <li><span class="num">5</span><div><b>Texto de WhatsApp propio en cada anuncio</b><div class="quien">Agencia y Waly · esta semana · impacto medio</div></div></li>
         <li><span class="num">6</span><div><b>Probar el anuncio C de urgencias</b><div class="quien">Agencia · 2 semanas · impacto por medir</div></div></li>
